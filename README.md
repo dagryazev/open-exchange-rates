@@ -11,5 +11,3 @@ API для openexchangerates.org
 Инструкция для запуска:
 1. composer install
 2. php index.php
-
-Если нужно заменить app_id он лежит в .env
