@@ -2,6 +2,7 @@
 
 namespace App\Api\OpenExchangeRates\Requests;
 
+use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
 use Psr\Http\Message\RequestInterface;
 
@@ -10,12 +11,12 @@ abstract class BaseRequest
     /**
      * @return RequestInterface
      */
-    abstract protected function getRequest() : RequestInterface;
+    abstract protected function getRequest() : Request;
 
     /**
      * @return RequestInterface
      */
-    final public function getRequestInterface() : RequestInterface {
+    public function getRequestInterface() : Request {
         $request = $this->getRequest();
 
         /**

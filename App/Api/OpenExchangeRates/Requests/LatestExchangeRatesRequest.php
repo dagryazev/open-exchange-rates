@@ -24,7 +24,7 @@ class LatestExchangeRatesRequest extends BaseRequest
     /**
      * @return RequestInterface
      */
-    public function getRequest(): RequestInterface
+    public function getRequest(): Request
     {
         return new Request('GET', '/latest.json?base=' . $this->base);
     }
