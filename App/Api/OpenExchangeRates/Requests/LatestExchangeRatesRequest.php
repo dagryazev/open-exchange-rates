@@ -5,10 +5,14 @@ namespace App\Api\OpenExchangeRates\Requests;
 use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\RequestInterface;
 
+/**
+ * Запрос на получение последний курсов для базовой валюты
+ */
 class LatestExchangeRatesRequest extends BaseRequest
 {
 
     /**
+     * Базовая валюта
      * @var string
      */
     protected string $base;
@@ -22,7 +26,8 @@ class LatestExchangeRatesRequest extends BaseRequest
     }
 
     /**
-     * @return RequestInterface
+     * Возвращает объект запроса
+     * @return Request
      */
     public function getRequest(): Request
     {

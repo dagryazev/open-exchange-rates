@@ -2,6 +2,9 @@
 
 namespace App\Api\OpenExchangeRates\DTO;
 
+/**
+ * DTO для эндпоинта https://openexchangerates.org/api/latest.json
+ */
 class LatestExchangeRatesDTO
 {
     /**
@@ -18,6 +21,7 @@ class LatestExchangeRatesDTO
     }
 
     /**
+     * Получение ссылки на дисклеймер
      * @return string
      */
     public function getDisclaimer() : string {
@@ -25,6 +29,7 @@ class LatestExchangeRatesDTO
     }
 
     /**
+     * Получение ссылки на документ лицензии
      * @return string
      */
     public function getLicense() : string {
@@ -32,6 +37,7 @@ class LatestExchangeRatesDTO
     }
 
     /**
+     * Получение временной метки запроса
      * @return int
      */
     public function getTimestamp() : int {
@@ -39,6 +45,7 @@ class LatestExchangeRatesDTO
     }
 
     /**
+     * Получение базовой валюты
      * @return string
      */
     public function getBase() : string {
@@ -46,6 +53,7 @@ class LatestExchangeRatesDTO
     }
 
     /**
+     * Получение курса валюта по отношению к базовой валюте
      * @return array
      */
     public function getRates() : array {

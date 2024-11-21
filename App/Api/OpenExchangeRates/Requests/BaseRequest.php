@@ -6,10 +6,13 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
 use Psr\Http\Message\RequestInterface;
 
+/**
+ * Фабрика для создания запросов к АПИ OpenExchangeRates
+ */
 abstract class BaseRequest
 {
     /**
-     * @return RequestInterface
+     * @return Request
      */
     abstract protected function getRequest() : Request;
 

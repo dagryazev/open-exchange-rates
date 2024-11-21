@@ -14,6 +14,9 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Client\ClientExceptionInterface;
 
+/**
+ * Класс для работы с АПИ OpenExchangeRates
+ */
 class OpenExchangeRatesApi
 {
     /**
@@ -30,6 +33,7 @@ class OpenExchangeRatesApi
     }
 
     /**
+     * Выполнения запроса на основе фабрики BaseRequest
      * @param BaseRequest $request
      *
      * @return array

@@ -14,9 +14,13 @@ use App\Api\OpenExchangeRates\OpenExchangeRatesApi;
 use App\Api\OpenExchangeRates\Requests\LatestExchangeRatesRequest;
 use Psr\Http\Client\ClientExceptionInterface;
 
+/**
+ * Фасад получения последних курс валют для указанной валюты
+ */
 class GetLatestExchangeRates
 {
     /**
+     * Обработчик логики
      * @param string $base Currency. 3-letter code, default: USD
      *
      * @return LatestExchangeRatesDTO
