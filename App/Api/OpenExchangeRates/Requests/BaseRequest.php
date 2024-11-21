@@ -19,7 +19,8 @@ abstract class BaseRequest
     /**
      * @return RequestInterface
      */
-    public function getRequestInterface() : Request {
+    public function getRequestInterface() : RequestInterface
+    {
         $request = $this->getRequest();
 
         /**

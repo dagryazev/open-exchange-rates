@@ -2,7 +2,9 @@
 
 namespace App\Api\OpenExchangeRates\Exceptions;
 
-class NotFoundException extends \Exception
+use Exception;
+
+class NotFoundException extends Exception
 {
     protected $message = 'Client requested a non-existent resource/route';
 }

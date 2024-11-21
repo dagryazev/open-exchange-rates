@@ -3,7 +3,6 @@
 namespace App\Api\OpenExchangeRates\Requests;
 
 use GuzzleHttp\Psr7\Request;
-use Psr\Http\Message\RequestInterface;
 
 /**
  * Запрос на получение последний курсов для базовой валюты

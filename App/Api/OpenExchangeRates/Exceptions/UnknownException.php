@@ -2,7 +2,9 @@
 
 namespace App\Api\OpenExchangeRates\Exceptions;
 
-class UnknownException extends \Exception
+use Exception;
+
+class UnknownException extends Exception
 {
 
 }
