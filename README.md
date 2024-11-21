@@ -6,7 +6,7 @@ API для openexchangerates.org
 
 Пример подзапроса который реализует эндпоинт /latest.json (App\Api\OpenExchangeRates\Requests\LatestExchangeRatesRequest.php)
 
-Реализован сервис для получения данных в формате DataTransferObject (App/Api/OpenExchangeRates/DTO/LatestExchangeRatesDTO.php)
+Реализован сервис для получения данных в формате DataTransferObject (App/Api/OpenExchangeRates/Services/GetLatestExchangeRates.php)
 
 Инструкция для запуска:
 1. **composer install**
