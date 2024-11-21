@@ -11,3 +11,5 @@ API для openexchangerates.org
 Инструкция для запуска:
 1. composer install
 2. php index.php
+3. Добавить в .env.example OER_API_ID его можно взять тут https://openexchangerates.org/signup/free
+4. Переименовать .env.example в .env
