@@ -2,7 +2,7 @@ API для openexchangerates.org
 
 Реализован класс для работы с API (App\Api\OpenExchangeRatesApi\OpenExchangeRatesApi.php)
 
-Реализована фабрика запросов (App\Api\OpenExchangeRates\Requests\BaseRequest)
+Реализована фабрика запросов (App\Api\OpenExchangeRates\Requests\BaseRequest.php)
 
 Пример подзапроса который релизует эндпоинт /latest.json (App\Api\OpenExchangeRates\Requests\LatestExchangeRatesRequest.php)
 
